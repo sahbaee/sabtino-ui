@@ -16,3 +16,4 @@
 :root{
     --transition: all ease 0.3s;
 }
+@import url('../../assets/fonts/fonts.css');
