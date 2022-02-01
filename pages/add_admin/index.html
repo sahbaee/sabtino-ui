@@ -24,7 +24,8 @@
             <h1>ایجاد حساب ادمین جدید</h1>
         </div>
         <div class="row row-2">
-            <form action="" class="add_admin-form animate__animated animate__fadeInUp" >
+            <form action="./admin_added.html" method="get" id="admin_form"
+                class="add_admin-form animate__animated animate__fadeInUp">
                 <input type="text" class="input input-1" placeholder="نام ادمین" required>
                 <input type="text" class="input input-2" placeholder="نام کاربری" required>
                 <input type="text" class="input input-3" placeholder="رمز عبور" required>
@@ -40,12 +41,20 @@
             </form>
         </div>
         <div class="row row-3 animate__animated animate__fadeInDown animate__delay-1s">
-            <button>ایجاد ادمین</button>
+            <button id="admin_sumbit_btn">ایجاد ادمین</button>
         </div>
     </main>
     <script>
-       const home_btn = document.getElementById("home_btn")
-        home_btn.addEventListener('click', go_home)
+
+        const admin_form = document.getElementById("admin_form");
+        const admin_sumbit_btn = document.getElementById("admin_sumbit_btn");
+        const home_btn = document.getElementById("home_btn");
+
+
+        admin_sumbit_btn.addEventListener('click', () => {
+            admin_form.submit();
+        });
+        home_btn.addEventListener('click', go_home);
         function go_home() {
             window.location.href = "../../index.html";
         };
