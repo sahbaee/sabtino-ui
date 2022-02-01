@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت کاربر جدید</title>
+    <link rel="stylesheet" href="../../src/css/slidePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="../../assets/icon-ui/css/uicons-regular-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+<!--animate__animated animate__fadeInLeft -->
+
+<body>
+    <header>
+        <div class="head-line animate__animated animate__fadeInLeft"></div>
+        <div class="head_box animate__animated animate__fadeInDown">
+            <h2 class="userName">مهدیار صهبایی احمدی</h2>
+            <span class="fi fi-rr-home svg_icons" id="home_btn"></span>
+        </div>
+    </header>
+    <main>
+        <!-- //slide-page -->
+        <div class="slidePage_box animate__animated animate__fadeInUp">
+            <div class="slide-page">
+                <div class="sp_bar">
+                    <div class="sp_bar_bar"></div>
+                </div>
+                <div class="holder">
+                    <div class="sp_holder" sp_holder="Active">1</div>
+                    <div class="sp_holder">2</div>
+                    <div class="sp_holder">3</div>
+                </div>
+            </div>
+        </div>
+        <!-- // viewBoard -->
+        <div class="viewBoard animate__animated animate__fadeInUp">
+            <form class="new_form" id="new_form" action="./user_added.html">
+                <div class="form_page1 form_page animate__animated ">
+
+                    <input type="text" class="input input-1" form_page="form-1" placeholder="نام و نام خانوادگی"
+                        required>
+                    <select name="" class="input input-2" form_page="form-1" placeholder="مقطع تحصیلی" required>
+                        <option value="1">مقطع تحصیلی</option>
+                        <option value="2">دوم</option>
+                        <option value="3">سوم</option>
+                        <option value="4">چهارم</option>
+                    </select>
+                    <input type="number" class="input input-3" form_page="form-1" placeholder="شماره" required>
+                    <input type="number" class="input input-4" form_page="form-1" placeholder="شماره پدر یا مادر"
+                        required>
+                </div>
+                <!-- page2 -->
+                <div class="form_page2 form_page  display_none animate__animated">
+
+                    <select name="" class="input input-5" form_page="form-2" placeholder="محدوده منزل" required>
+                        <option value="1">احمد آباد</option>
+                        <option value="2">وکیل آباد</option>
+                        <option value="3">ابوطالب</option>
+                        <option value="4">حرم</option>
+                    </select>
+                    <textarea class="input input-6" form_page="form-2" placeholder="آدرس دقیق منزل" required></textarea>
+                    <select name="" id="" class="input input-7" form_page="form-2" placeholder="آیا به کلاس میرود؟"
+                        required>
+                        <option value="1">بله</option>
+                        <option value="2">خیر</option>
+                        <option value="3">قبلا میرفته</option>
+                        <option value="4">نامعلوم</option>
+
+                    </select>
+                </div>
+                <div class="form_page3 animate__animated form_page display_none">
+                    <!-- page3 -->
+                    <input type="text" class="input input-8" form_page="form-3" placeholder="نام معرف">
+                    <textarea class="input input-9" form_page="form-3" placeholder="توضیحات"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="btn_container animate__animated animate__fadeInUp">
+            <button id="btn_back" class="btn_back display_none animate__animated ">
+            </button>
+            <button id="btn_next" class="animate__animated">
+                ادامه
+            </button>
+            <button id="sub_btn" class="animate__animated display_none">
+                ثبت نهایی
+            </button>
+        </div>
+    </main>
+    <!-- <script src="/src/js/slidePage.js"></script> -->
+    <script src="../../src/js/main.js"></script>
+</body>
+
+</html>

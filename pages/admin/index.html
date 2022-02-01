@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول ادمین ها</title>
+    <link href="../../assets/icon-ui/css/uicons-regular-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../src/css/user_table.css">
+</head>
+
+<body>
+    <header>
+        <div class="head-line"></div>
+        <div class="head_box">
+            <h2 class="userName">مهدیار صهبایی احمدی</h2>
+            <span class="fi fi-rr-home svg_icons" id="home_btn"></span>
+        </div>
+    </header>
+    <main>
+       
+        <div class="user_table-col col-2">
+            <input type="text" name="" id="userSearch-input" onkeyup="search_filter()" placeholder="جستجو در ادمین ها">
+        </div>
+        <div class="user_table-col col-3">
+            <table id="mytable" class="mytable">
+                <thead>
+                    <th>شناسه</th>
+                    <th>نام</th>
+                    <th>نام کاربری</th>
+                    <th>رمز عبور</th>
+                    <th>سطح دسترسی</th>
+                    <th>درباره</th>
+                    <th>تعداد افراد ثبت کرده</th>
+                    <th>ویرایش</th>
+                    <th>حذف</th>
+                </thead>
+                <tbody>
+
+
+                    <tr>
+                        <td>1</td>
+                        <td>امیر حسین شجاع </td>
+                        <td>mahdiyarsoft</td>
+                        <td>
+
+                            <a href="update.php?id=46" class="edit_btn table_btn"
+                                onclick="return confirm('آیا از ویرایش مخاطب اطمینان دارید؟')">
+                                <span class="fi-rr-lock"></span>
+                            </a>
+                        </td>
+                        <td>
+                            ثبت و ناظر
+                        </td>
+                        <td>یاقوت - نیمه شعبان 1400</td>
+                        <td>37</td>
+                        <td>
+                            <a href="update.php?id=46" class="edit_btn table_btn"
+                                onclick="return confirm('آیا از ویرایش مخاطب اطمینان دارید؟')">
+                                <span class="fi-rr-edit"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="data.php?del=46" class="delete_btn table_btn"
+                                onclick="return confirm('آیا مخاطب حذف شود؟')">
+                                <span class="fi-rr-file-delete"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>امیر حسین شجاع </td>
+                        <td>mahdiyarsoft</td>
+                        <td>
+
+                            <a href="update.php?id=46" class="edit_btn table_btn"
+                                onclick="return confirm('آیا از ویرایش مخاطب اطمینان دارید؟')">
+                                <span class="fi-rr-lock"></span>
+                            </a>
+                        </td>
+                        <td>
+                            ثبت و ناظر
+                        </td>
+                        <td>یاقوت - نیمه شعبان 1400</td>
+                        <td>37</td>
+                        <td>
+                            <a href="update.php?id=46" class="edit_btn table_btn"
+                                onclick="return confirm('آیا از ویرایش مخاطب اطمینان دارید؟')">
+                                <span class="fi-rr-edit"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="data.php?del=46" class="delete_btn table_btn"
+                                onclick="return confirm('آیا مخاطب حذف شود؟')">
+                                <span class="fi-rr-file-delete"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>امیر حسین شجاع </td>
+                        <td>mahdiyarsoft</td>
+                        <td>
+
+                            <a href="update.php?id=46" class="edit_btn table_btn"
+                                onclick="return confirm('آیا از ویرایش مخاطب اطمینان دارید؟')">
+                                <span class="fi-rr-lock"></span>
+                            </a>
+                        </td>
+                        <td>
+                            ثبت و ناظر
+                        </td>
+                        <td>یاقوت - نیمه شعبان 1400</td>
+                        <td>37</td>
+                        <td>
+                            <a href="update.php?id=46" class="edit_btn table_btn"
+                                onclick="return confirm('آیا از ویرایش مخاطب اطمینان دارید؟')">
+                                <span class="fi-rr-edit"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="data.php?del=46" class="delete_btn table_btn"
+                                onclick="return confirm('آیا مخاطب حذف شود؟')">
+                                <span class="fi-rr-file-delete"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    
+          
+                </tbody>
+            </table>
+        </div>
+        <div class="user_table-col col-1">
+            <button id="createAdmin_btn" onclick="" class="createAdmin_btn">ایجاد ادمین</button>
+            
+        </div>
+    </main>
+    <script>
+        const tableRow = document.getElementsByTagName("tr");
+        const del_btn = document.querySelectorAll(".delete_btn");
+        const edit_btn = document.querySelectorAll(".edit_btn");
+
+        for (let i = 0; i < tableRow.length; i++) {
+            tableRow[i].addEventListener('dblclick', () => {
+                tableRow[i].classList.toggle("color_active");
+            })
+        };
+        home_btn.addEventListener('click', go_home)
+        function go_home() {
+            window.location.href = "../../index.html";
+        };
+
+
+        // search
+
+        function search_filter() {
+            var input, filter, table, tr, td, i, txtValue, th;
+            input = document.getElementById("userSearch-input");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("mytable");
+            tr = table.getElementsByTagName("tr");
+            th = document.getElementsByTagName("th");
+
+            for (i = 0; i < tr.length; i++) {
+
+                td = tr[i].getElementsByTagName("td")[1];
+
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+
+                    } else {
+                        tr[i].style.display = "none";
+                    };
+                };
+            };
+        };
+
+
+    </script>
+
+    <script type="text/javascript" src="../../src/js/downloadFile.js"></script>
+</body>
+
+</html>

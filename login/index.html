@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="../assets/icon-ui/css/uicons-regular-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/login.css">
+</head>
+
+<body>
+    <div class="head-line animate__animated animate__fadeInLeft"></div>
+    <main>
+        <h1 class="main_title animate__animated animate__fadeIn">ثبتینو...</h1>
+        <form action="">
+            <div class="login_form_box animate__animated animate__fadeInUp">
+                <input type="text" class="login_input input-1"  placeholder="نام کاربری">
+                <hr>
+                <input type="text" class="login_input input-2" placeholder="رمز عبور">
+            </div>
+            <button type="submit" class="login_btn animate__animated animate__fadeIn">ورود</button>
+        </form>
+    </main>
+    <div class="head-line animate__animated animate__fadeInUp"></div>
+    <script>
+        let input = document.querySelectorAll(".login_input");
+        let form_box = document.querySelector(".login_form_box");
+        for (let i = 0; i < input.length; i++) {
+            input[i].addEventListener('focus',()=>{
+                console.log('f');
+                form_box.classList.add("border")
+            });
+            input[i].addEventListener('blur',()=>{
+                console.log('b');
+                form_box.classList.remove("border")
+            });
+            
+        }
+    </script>
+</body>
+
+</html>

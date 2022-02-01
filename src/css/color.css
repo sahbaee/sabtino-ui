@@ -1,0 +1,18 @@
+:root {
+    --color-1: #00C397;
+    --color-2: #004837;
+    --color-3: #148369;
+    --bg-color: #181818;
+}
+:root {
+    --sp_bar_width-1: 40vh;
+    --sp_bar_width-2: 40vh;
+    --sp_color-1: #00C397;
+    --sp_color-2: #004837;
+    --sp_txt_color: #ffffff;
+    --sp_holder-size: 30px;
+    --sp_holder_radius: 50%;
+}
+:root{
+    --transition: all ease 0.3s;
+}
