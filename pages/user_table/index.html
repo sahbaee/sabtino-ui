@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جدول کاربران</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link href="../../assets/icon-ui/css/uicons-regular-rounded.css" rel="stylesheet">
     <link rel="stylesheet" href="../../src/css/user_table.css">
 </head>
@@ -14,13 +16,13 @@
         <div class="head-line"></div>
         <div class="head_box">
             <h2 class="userName">مهدیار صهبایی احمدی</h2>
-            <span class="fi fi-rr-home svg_icons" id="home_btn"></span>
+            <span class="fi fi-rr-home svg_icons animate__animated animate__fadeIn" id="home_btn"></span>
         </div>
     </header>
     <main>
         <div class="user_table-col col-1">
-            <button id="export_csv" onclick="exportData()"></button>
-            <form action="" id="getConstacts_form" class="form_filter-1">
+            <button id="export_csv" onclick="exportData()" class="animate__animated animate__fadeInRight"></button>
+            <form action="" id="getConstacts_form" class="form_filter-1 animate__animated animate__fadeInLeft">
                 <select name="" id="">
                     <option value="" >کاربران من</option>
                     <option value="">همه</option>
@@ -28,9 +30,9 @@
             </form>
         </div>
         <div class="user_table-col col-2">
-            <input type="text" name="" id="userSearch-input" onkeyup="search_filter()" placeholder="جستجو در کاربران">
+            <input type="text" name="" id="userSearch-input" class="animate__animated animate__fadeInUp" onkeyup="search_filter()" placeholder="جستجو در کاربران">
         </div>
-        <div class="user_table-col col-3">
+        <div class="user_table-col col-3 animate__animated animate__fadeInUp">
             <table id="mytable" class="mytable">
                 <thead>
                     <th>شناسه</th>

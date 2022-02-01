@@ -15,41 +15,46 @@
         <div class="head-line"></div>
         <div class="head_box">
             <h2 class="userName">مهدیار صهبایی احمدی</h2>
-            <i class="fi fi-rr-lock svg_icons" id="lock_btn"></i>
+            <i class="fi fi-rr-lock svg_icons animate__animated animate__FadeIn" id="lock_btn"></i>
         </div>
     </header>
     <main>
-        <div class="item_row item_row-1">
+
+        <div class="item_row item_row-1 animate__animated animate__FadeInDown">
             <img src="./assets/img/banner.jpg" alt="" class="banner">
         </div>
-        <div class="item_row item_row-2">
-            <div class="section sec-1">
+
+
+        <div class="item_row item_row-2 ">
+            <div class="section sec-1 animate__animated animate__bounceInRight">
                 <h1>36</h1>
                 <h2>کاربر ثبت کرده اید</h2>
             </div>
-            <div class="section sec-2" onclick="window.location.href = './pages/user_table/index.html';">
+            <!-- animate__animated animate__bounceIn animate__delay-1s -->
+            <div class="section sec-2 animate__animated animate__bounceIn" onclick="window.location.href = './pages/user_table/index.html';">
                 <i class="fi-rr-address-book"></i>
                 <h2>جدول کاربران</h2>
             </div>
         </div>
-        <a href="./pages/add_user/index.html"class="item_row item_row-3">
+
+        <a href="./pages/add_user/index.html"class="item_row item_row-3 animate__animated animate__FadeIn">
             <h3>ثبت کاربر جدید</h3>
             <i class="fi-rr-user-add"></i>
         </a>
+
         <div class="item_row item_row-4">
-            <div class="section sec-3" onclick="window.location.href = './pages/admin/index.html';">
+            <div class="section sec-3 animate__animated animate__bounceIn"  onclick="window.location.href = './pages/admin/index.html';">
                 <i class="fi-rr-comment-user"></i>
                 <h2>ادمین ها</h2>
-                
             </div>
-            <div class="section sec-4">
+
+            <div class="section sec-4 animate__animated animate__bounceInLeft">
                 <i class="fi-rr-chart-histogram"></i>
                 <h2>تحلیل آمار</h2>
             </div>
         </div>
-    </main>
 
-    <!-- <div class="head-line"></div> -->
+    </main>
 </body>
 
 </html>
